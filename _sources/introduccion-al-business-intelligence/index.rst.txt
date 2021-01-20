@@ -1,0 +1,50 @@
+Introducción a la inteligencia de negocios con PBI
+====================================================================
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   /introduccion-al-business-intelligence/course-info
+   
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   /introduccion-al-business-intelligence/repositorio
+
+Sesión 01 - Introducción
+--------------------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   /notebooks/bi/01-introduccion-bi
+
+Sesión 02 - Fundamentos de BI
+--------------------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   /notebooks/bi/02-fundamentos-de-bi
+
+Sesión 03 - Introducción a Power BI
+--------------------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   /notebooks/bi/03-introduccion-pbi
+
+Sesión 04 - Obtener y transformar datos con PBI
+--------------------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   /notebooks/bi/04-obtener-datos-y-preparar-datos

@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Introducción a la inteligencia de negocios con PBI &mdash; documentación de Cursos - 1.0</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Información del curso" href="course-info.html" />
+    <link rel="prev" title="Laboratorio-03" href="../notebooks/recursos/laboratorios/03-laboratorio.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Cursos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Cursos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduccion_a_la_ciencia_de_datos/index.html">Introducción a la ciencia de datos con Python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introducción a la inteligencia de negocios con PBI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="course-info.html">Información del curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repositorio.html">Repositorio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html">Introducción a la Inteligencia de Negocios (BI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/02-fundamentos-de-bi.html">Fundamentos de inteligencia de negocios (BI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/03-introduccion-pbi.html">Introducción a Power BI (PBI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/04-obtener-datos-y-preparar-datos.html">Obtención y preparación de datos con PBI (BI)</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Cursos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Introducción a la inteligencia de negocios con PBI</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/introduccion-al-business-intelligence/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="introduccion-a-la-inteligencia-de-negocios-con-pbi">
+<h1>Introducción a la inteligencia de negocios con PBI<a class="headerlink" href="#introduccion-a-la-inteligencia-de-negocios-con-pbi" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="course-info.html">Información del curso</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="repositorio.html">Repositorio</a></li>
+</ul>
+</div>
+<div class="section" id="sesion-01-introduccion">
+<h2>Sesión 01 - Introducción<a class="headerlink" href="#sesion-01-introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html">Introducción a la Inteligencia de Negocios (BI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html#Acerca-de-BI">Acerca de BI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html#¿Qué-es-inteligencia-de-negocio?">¿Qué es inteligencia de negocio?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html#¿Qué-no-es-inteligencia-de-negocio?">¿Qué no es inteligencia de negocio?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html#Beneficios-de-implementar-BI">Beneficios de implementar BI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html#Niveles-de-información-en-una-organización">Niveles de información en una organización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html#Sistemas-de-información">Sistemas de información</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html#La-inteligencia-de-negocios-en-las-empresas">La inteligencia de negocios en las empresas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/01-introduccion-bi.html#Bibliografía">Bibliografía</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="sesion-02-fundamentos-de-bi">
+<h2>Sesión 02 - Fundamentos de BI<a class="headerlink" href="#sesion-02-fundamentos-de-bi" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/bi/02-fundamentos-de-bi.html">Fundamentos de inteligencia de negocios (BI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/02-fundamentos-de-bi.html#Arquitectura-de-una-solución-de-inteligencia-de-negocios">Arquitectura de una solución de inteligencia de negocios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/02-fundamentos-de-bi.html#El-proceso-de-Extracción-Transformación-y-Carga-(ETL)">El proceso de Extracción Transformación y Carga (ETL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/02-fundamentos-de-bi.html#Cubos-Multidimencionales-OLAP">Cubos Multidimencionales OLAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/02-fundamentos-de-bi.html#La-capa-analítica-o-de-aplicaciones-de-BI">La capa analítica o de aplicaciones de BI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/02-fundamentos-de-bi.html#Metodologías-para-el-desarrollo-de-sistemas-BI-y-DM">Metodologías para el desarrollo de sistemas BI y DM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/02-fundamentos-de-bi.html#Bibliografía">Bibliografía</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="sesion-03-introduccion-a-power-bi">
+<h2>Sesión 03 - Introducción a Power BI<a class="headerlink" href="#sesion-03-introduccion-a-power-bi" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/bi/03-introduccion-pbi.html">Introducción a Power BI (PBI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/03-introduccion-pbi.html#Herramientas-de-analítica-de-datos">Herramientas de analítica de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/03-introduccion-pbi.html#Power-BI">Power BI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/03-introduccion-pbi.html#Instalación-de-Power-BI">Instalación de Power BI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/03-introduccion-pbi.html#Interfaces-de-Power-BI-Desktop">Interfaces de Power BI Desktop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/03-introduccion-pbi.html#Material-Complementario">Material Complementario</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="sesion-04-obtener-y-transformar-datos-con-pbi">
+<h2>Sesión 04 - Obtener y transformar datos con PBI<a class="headerlink" href="#sesion-04-obtener-y-transformar-datos-con-pbi" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/bi/04-obtener-datos-y-preparar-datos.html">Obtención y preparación de datos con PBI (BI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/04-obtener-datos-y-preparar-datos.html#Ciclo-de-vida-de-Power-BI">Ciclo de vida de Power BI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/04-obtener-datos-y-preparar-datos.html#Conectar-a-datos">Conectar a datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/04-obtener-datos-y-preparar-datos.html#Transformar-los-datos">Transformar los datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/bi/04-obtener-datos-y-preparar-datos.html#Material-Complementario">Material Complementario</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="course-info.html" class="btn btn-neutral float-right" title="Información del curso" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../notebooks/recursos/laboratorios/03-laboratorio.html" class="btn btn-neutral float-left" title="Laboratorio-03" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Dubadier Najar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

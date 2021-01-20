@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Fundamentos de inteligencia de negocios (BI) &mdash; documentación de Cursos - 1.0</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="Introducción a Power BI (PBI)" href="03-introduccion-pbi.html" />
+    <link rel="prev" title="Introducción a la Inteligencia de Negocios (BI)" href="01-introduccion-bi.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Cursos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Cursos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion_a_la_ciencia_de_datos/index.html">Introducción a la ciencia de datos con Python</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../introduccion-al-business-intelligence/index.html">Introducción a la inteligencia de negocios con PBI</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion-al-business-intelligence/course-info.html">Información del curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion-al-business-intelligence/repositorio.html">Repositorio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01-introduccion-bi.html">Introducción a la Inteligencia de Negocios (BI)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Fundamentos de inteligencia de negocios (BI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03-introduccion-pbi.html">Introducción a Power BI (PBI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04-obtener-datos-y-preparar-datos.html">Obtención y preparación de datos con PBI (BI)</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Cursos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../introduccion-al-business-intelligence/index.html">Introducción a la inteligencia de negocios con PBI</a> &raquo;</li>
+        
+      <li>Fundamentos de inteligencia de negocios (BI)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/notebooks/bi/02-fundamentos-de-bi.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Fundamentos-de-inteligencia-de-negocios-(BI)">
+<h1>Fundamentos de inteligencia de negocios (BI)<a class="headerlink" href="#Fundamentos-de-inteligencia-de-negocios-(BI)" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>90 min | Última modificación: Enero 08, 2020.</p>
+<div class="section" id="Arquitectura-de-una-solución-de-inteligencia-de-negocios">
+<h2>Arquitectura de una solución de inteligencia de negocios<a class="headerlink" href="#Arquitectura-de-una-solución-de-inteligencia-de-negocios" title="Enlazar permanentemente con este título">¶</a></h2>
+<hr class="docutils" />
+<p>Para el desarrollo de una solución de inteligencia de negocios es necesario comprender su arquitectura, en la imagen es posible apreciar 3 capas: la capa de <strong>fuentes de datos</strong>, la capa de <strong>almacenes de datos</strong> y la capa de <strong>análisis y aplicaciones BI</strong>. Entre la primera y segunda capas se requiere el proceso de <strong>extracción, transformación y carga (ETL)</strong> que suministre los datos crudos o en bruto (raw data) al almacén de datos (data warehouse). Para el <strong>análisis de datos se requieren
+aplicaciones BI</strong> que accedan al data warehouse mediante cubos OLAP y procesos de integración de datos.</p>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="../../_images/Figura-1-Arquitectura-BI.ppm" /></p>
+</div><div class="section" id="La-capa-de-fuente-de-datos">
+<h3>La capa de fuente de datos<a class="headerlink" href="#La-capa-de-fuente-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
+<hr class="docutils" />
+<p>Los datos en bruto existen en gran cantidad y diversidad de formatos y pueden clasificarse según:</p>
+<ol class="arabic simple">
+<li><p><strong>El origen:</strong></p>
+<ul class="simple">
+<li><p><strong>Internos:</strong> Son de la propia empresa, pueden presentarse en bases de datos, archivos o reportes de sistemas informáticos (ERP, CRM, SCM)</p></li>
+<li><p><strong>Externos:</strong> Se obtienen de otras organizaciones (redes sociales, sistemas de información geográfica, sistemas gubernamentales) mediante web services, descarga de sitios web, por email, reportes de sistemas informáticos.</p></li>
+</ul>
+</li>
+</ol>
+<div align="center"><p><img alt="Drawing" src="../../_images/Infografía-Gráfico-BI.jpg" /></p>
+</div><ol class="arabic simple" start="2">
+<li><p><strong>El formato:</strong></p>
+<ul class="simple">
+<li><p><strong>Estructurados:</strong> Se obtienen de bases de datos relacionales, otras data warehouse.</p></li>
+<li><p><strong>Semi-estructurados:</strong> Por lo general son archivos en formatos: CSV, JSON, XML, HTML, etc.</p></li>
+<li><p><strong>No estructurados:</strong> datos de archivos como PDF, imagen, sonido, video, etc.</p></li>
+</ul>
+</li>
+</ol>
+<div align="center"><p><img alt="Drawing" src="../../_images/fuentes-de-datos.png" /></p>
+</div><ol class="arabic simple" start="3">
+<li><p><strong>El tamaño:</strong></p>
+<ul class="simple">
+<li><p><strong>Volúmenes de datos normales:</strong> Cientos o miles de registros medidos en KB o MB.</p></li>
+<li><p><strong>Grandes volúmenes de datos (big data):</strong> Millones de registros medidos en GB, TB o PB (Peta Byte), generalmente se encuentran en sistemas clusterizados con mecanismos de procesamiento y almacenamiento distribuido.</p></li>
+</ul>
+</li>
+</ol>
+<div align="center"><p><img alt="Drawing" src="../../_images/infografia_big_data_y_analitica_de_negocio.jpg" /></p>
+</div></div>
+<div class="section" id="La-capa-de-data-warehouse">
+<h3>La capa de data warehouse<a class="headerlink" href="#La-capa-de-data-warehouse" title="Enlazar permanentemente con este título">¶</a></h3>
+<hr class="docutils" />
+<p>Comprende los grandes repositorios de <strong>metadatos</strong> (Son datos acerca de los datos), en este ámbito se encuentran los <strong>Data Warehouse</strong> y los <strong>Big Data</strong>.</p>
+<div class="section" id="Data-Warehouse-(DW):">
+<h4>Data Warehouse (DW):<a class="headerlink" href="#Data-Warehouse-(DW):" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Es considerado un almacén o bodega de datos estructurados que contiene información temática, histórica e integrada según los indicadores clave de desempeño que se hayan previsto en una organización (Rosado G. &amp; Rico B., 2010). Un DW es temático debido a que está conformado por áreas o grupo de datos de una organización. Cada tema del DW es representado por un <strong>Data mart</strong>.</p>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="../../_images/DataMart.JPG" /></p>
+</div><ul>
+<li><p><strong>Data Mart:</strong> Comprende un subconjunto de datos enfocados en el análisis de un tema, área o ámbito específico en una organización (Mosquera &amp; Hallo, 2014). El conjunto de data marts comprende un data warehouse.</p>
+<p><em>Componentes de un Data Mart:</em></p>
+<p><strong>Tabla de hechos (table fact):</strong> Es la tabla central del data mart, que contiene los datos o medidas (indicadores claves de desempeño del negocio KPI’s) que se utilizan para análisis y las claves de las tablas de dimensiones. Es común nombrar las tablas de hechos en función del área/tema que representa el data mart; por ejemplo, si el data mart representa los cultivos agrícolas que se han producido o que están en proceso de producción, la tabla de hechos puede ser: th_produccion_cultivos.</p>
+<p><strong>Tablas de Dimensiones:</strong> Corresponden a las perspectivas o vistas a través de las cuales es posible analizar las medidas del negocio o KPI’s. Por ejemplo: para la medida densidad de siembra (número de plantas por hectárea), las posibles dimensiones pueden ser: especie de cultivo (banano, cacao, café, etc.), clase de cultivo (frutales, hortalizas, cereales, etc.), tipo de cultivo según duración (ciclo corto, perennes), tiempo de la siembra (año, semestre, trimestre y mes), tipo de suelo,
+etc.</p>
+<p><strong>Medida o KPI (Key Performance Indicator):</strong> Representa un valor numérico que contribuye al análisis de un hecho. Por ejemplo: densidad de siembra (número de plantas por hectárea), edad del cultivo (días o años), rendimiento de un cultivo (toneladas métricas por hec- tárea TM/ha), costos de producción por hectárea, rentabilidad de un cultivo (ingresos – egresos), etc.</p>
+</li>
+</ul>
+<div align="center"><p><img alt="Drawing" src="../../_images/Data-Mart-and-Types-of-Data-Marts.jpg" /></p>
+</div></div>
+<div class="section" id="Big-Data:">
+<h4>Big Data:<a class="headerlink" href="#Big-Data:" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Representa un conjunto de recursos de información de gran <strong>volumen</strong>, que se obtienen a altas <strong>velocidades</strong> y con una <strong>variedad</strong> de formatos, que demandan un almacenamiento escalable y eficiente, formas innovadoras de procesamiento de información para mejorar el análisis, la comprensión y toma de decisiones (NIST Big Data Public Working Group, 2015).</p>
+<p>Una Big Data es una oportunidad para que las organizaciones obtengan ventajas competitivas en el mundo actual digitalizado y globalizado (De Mauro, Greco, &amp; Grimaldim, 2015). Un término asociado a Big Data es Data Lake, que comprende grandes conjuntos de datos (big data sets), también llamados lagos de datos, que se etiquetan para realizar consultas o buscar patrones.</p>
+<p>Los tipos de Big Data en función de sus prestaciones pueden ser: * <strong>De alto rendimiento</strong>: Teradata, HP Vertica IBM Netezza Oracle Exadata</p>
+<ul class="simple">
+<li><p><strong>Distribuidos</strong>: Hadoop (HDFS es Hadoop Distributed File System), considerado como la plataforma más utilizadas para el procesamiento y almacenamiento distribuido de Plataformas que integran Hadoop son Hortonworks, Cloudera, AWS Microsoft Azure, etc.</p></li>
+</ul>
+<div align="center"><p><img alt="Drawing" src="../../_images/2610d5da9fef60cf2496d63a3ae71c573909f6570fe084f968b1132778a7dc2d" /></p>
+</div><iframe width="640" height="480" src="https://www.youtube.com/embed/Ju2oDsHAL-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</div>
+<div class="section" id="Modelos-dimensionales">
+<h3>Modelos dimensionales<a class="headerlink" href="#Modelos-dimensionales" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>A continuación se detallarán los tres tipos de estructuras de modelo del DW:</p>
+<ul class="simple">
+<li><p><strong>Esquema en Estrella:</strong> Contiene una sola tabla de hechos con los datos de análisis y las claves de todas las tablas de dimensiones. No existen relaciones entre las dimensiones.</p></li>
+</ul>
+<div align="center"><p><img alt="Drawing" src="../../_images/img_071.png" /></p>
+</div><ul class="simple">
+<li><p><strong>Esquema en Copo de Nieve:</strong> Similar al esquema en estrella con la diferencia de que las dimensiones pueden relacionarse creando jerarquías.</p></li>
+</ul>
+<div align="center"><p><img alt="Drawing" src="../../_images/img_073.png" /></p>
+</div><ul class="simple">
+<li><p><strong>Esquema en Constelación:</strong> Integración de varios esquemas estrella o copos de nieve que representan un data warehouse. Su diseño puede llegar a ser complejo debido a la cantidad de relaciones entre las tablas de hechos y dimensiones, más si las dimensiones se comparten entre varios data marts. Es aconsejable manejar por separado el diseño de los data marts; sin embargo, en la implementación física del data warehouse es necesario optimizar y no repetir dimensiones.</p></li>
+</ul>
+<div align="center"><p><img alt="Drawing" src="../../_images/img_074.png" /></p>
+</div></div>
+</div>
+<div class="section" id="El-proceso-de-Extracción-Transformación-y-Carga-(ETL)">
+<h2>El proceso de Extracción Transformación y Carga (ETL)<a class="headerlink" href="#El-proceso-de-Extracción-Transformación-y-Carga-(ETL)" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>ETL de sus siglas en inglés Extraction, Transformation and Load, es el proceso que permite seleccionar datos desde múltiples fuentes, utilizando una herramienta de integración se pre-procesan y se cargan en un nuevo almacén de datos (data warehouse).</p>
+<p>Las actividades ETL se describen a continuación:</p>
+<ul class="simple">
+<li><p><strong>Extracción.</strong> Consiste en la identificación de los datos fuentes, verificación de su calidad, lectura de datos crudos, obtención de agregados y establecimiento de la estructura de la metadata del data warehouse.</p></li>
+<li><p><strong>Transformación.</strong> Comprende la aplicación de una serie de reglas de negocio sobre los datos extraídos para convertirlos en datos con el formato del data warehouse. Algunas de estas actividades son: limpieza, cambio de formato, generación de datos calculados, creación de nuevos datos o claves, filtrado, ordenación, asociaciones y agregaciones.</p></li>
+<li><p><strong>Carga.</strong> Las actividades que se realizan son: integración de datos, pruebas de carga, carga (escritura) de datos en el data warehouse, gestión de errores y mantenimiento de metadata.</p></li>
+</ul>
+<div align="center"><p><img alt="Drawing" src="../../_images/ETL-e1563879776366.jpg" /></p>
+</div></div>
+<div class="section" id="Cubos-Multidimencionales-OLAP">
+<h2>Cubos Multidimencionales OLAP<a class="headerlink" href="#Cubos-Multidimencionales-OLAP" title="Enlazar permanentemente con este título">¶</a></h2>
+<hr class="docutils" />
+<p><strong>Cubos OLAP.</strong> OLAP significa procesamiento analítico en línea. Un cubo OLAP representa el esquema o definición de la estructura multidimensional para el análisis de datos empresariales que se encuentra agregados y organizados en un data warehouse. Un cubo se construye definiendo una tabla de hechos, las medidas y las dimensiones.</p>
+<div align="center"><p><img alt="Drawing" src="../../_images/cubo.png" /></p>
+</div><ol class="arabic simple">
+<li><p>¿Cuántos pares de zapatos Hello se vendieron a almacenes Éxito?</p></li>
+<li><p>¿Cuántos productos se vendieron en total a Iserra el 1 de octubre de 2011?</p></li>
+<li><p>¿Cuántos pares de zapatos Hello se vendieron a Iserra el 1 de octubre de 2011?</p></li>
+<li><p>¿Cuántos bolsos Hello se vendieron a Olímpica?</p></li>
+<li><p>¿Cuántos bolsos Hello se vendieron en total el 1 de noviembre?</p></li>
+<li><p>¿Cuántos zapatos Hello se vendieron en total?</p></li>
+<li><p>¿Cuántos productos se vendieron en total?</p></li>
+<li><p>¿Cuántos productos se vendieron en total el 1 de noviembre de 2011?</p></li>
+</ol>
+</div>
+<div class="section" id="La-capa-analítica-o-de-aplicaciones-de-BI">
+<h2>La capa analítica o de aplicaciones de BI<a class="headerlink" href="#La-capa-analítica-o-de-aplicaciones-de-BI" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En esta capa se ubican las aplicaciones y herramientas para el análisis descriptivo y predictivo de los datos, las más destacadas son: visores OLAP, tableros de control (dashboards), reportes y consultas Ad Hoc, Minería de datos y otras. Este tipo de aplicaciones se clasifican en dos tipos de sistemas que ya fueron mencionados en las secciones anteriores: los <em>sistemas de soporte de decisiones (DSS)</em> y los <em>sistemas de información para ejecutivos (EIS)</em>.</p>
+<div align="center"><p><img alt="Drawing" src="../../_images/esquema-bi_2.png" /></p>
+</div><ul class="simple">
+<li><p><strong>Análisis multidimensional OLAP:</strong> Mediante visores de cubos OLAP, es posible generar consultas dinámicas de tipo MDX. Es decir, el usuario puede elegir los KPI’s o medidas y dimensiones a visualizar. Las operaciones OLAP que se pueden realizar son:</p>
+<ul>
+<li><p><em>Roll-up (Agregación):</em> Eliminación de un criterio de agrupación para el análisis.</p></li>
+<li><p><em>Drill-down (Disgregación):</em> Introducción de un nuevo criterio de agrupación, disgregando los grupos actuales.</p></li>
+<li><p><em>Slice and dice:</em> Consiste en seleccionar y proyectar datos en una consulta.</p></li>
+<li><p><em>Pivote:</em> Rotar la visualización de los datos, transformando filas en columnas.</p></li>
+</ul>
+</li>
+<li><p><strong>Consultas o Reportes Ad Hoc:</strong> Consiste en el diseño de consultas o reportes personalizados para resolver un problema específico sin posibilidad de generalizar.</p></li>
+<li><p><strong>Dashboard (Tablero de control):</strong> Son interfaces visuales que resumen la información del negocio mediante los indicadores clave de desempeño (KPI) utilizando gráficos estadísticos, valores escalares, medidores, semáforos, etc.</p></li>
+<li><p><strong>Minería de datos (DM: Data Mining):</strong> Es el proceso de exploración mediante técnicas descriptivas y predictivas que permiten descubrir un conocimiento oculto (patrones) a partir un conjunto de datos (data sets) o bases de datos (KDD: Knowledge Discovery in Databases). DM aplica métodos y técnicas de estadística, inteligencia artificial, y aprendizaje automático.</p></li>
+</ul>
+</div>
+<div class="section" id="Metodologías-para-el-desarrollo-de-sistemas-BI-y-DM">
+<h2>Metodologías para el desarrollo de sistemas BI y DM<a class="headerlink" href="#Metodologías-para-el-desarrollo-de-sistemas-BI-y-DM" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Existen varias metodologías que proponen un ciclo de vida para crear soluciones BI y/o DM; entre las más destacadas se encuentran: Imon, Kimball, HEFESTO, CRISP-DM. Nos centraremos en esta última.</p>
+<div class="section" id="Metodología-CRISP-DM-(Cross-Industry-Standard-Process-for-Data-Mining)">
+<h3>Metodología CRISP-DM (Cross Industry Standard Process for Data Mining)<a class="headerlink" href="#Metodología-CRISP-DM-(Cross-Industry-Standard-Process-for-Data-Mining)" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Esta metodología es un estándar de la industria de la minería de datos y aplicaciones BI que describe un proceso organizado por fases para llevar a cabo un proyecto de minería de datos. Las actividades de esta metodología se observan en la Imagen y se describen a continuación:</p>
+<div align="center"><p><img alt="Drawing" src="../../_images/Fases-del-proceso-de-CRISP-DM-Adaptado-de-10.png" /></p>
+</div><ul class="simple">
+<li><p><strong>Comprender del negocio:</strong> Consiste en realizar actividades como: identificar los requerimientos empresariales, el planteamiento del problema, los objetivos del proyecto de análisis de datos y el establecimiento de un plan de trabajo.</p></li>
+<li><p><strong>Comprender los Datos:</strong> En esta fase, se realizan actividades de identificación de los indicadores clave de desempeño, las dimensiones de análisis, familiarización con las estructuras de datos fuentes y verificación de su calidad.</p></li>
+<li><p><strong>Preparar los datos:</strong> Comprende actividades de limpieza, transformación, formateo, selección e integración de datos. Estas actividades se ejecutan en reiteradas ocasiones hasta cumplir los requerimientos del negocio.</p></li>
+<li><p><strong>Modelar:</strong> En esta fase se crean los modelos (diseños) de los conjuntos de datos o almacenes de datos con base a los indicadores de desempeño del negocio (KPI’s) o requerimientos de análisis de datos. Con el propósito de refinar el diseño, se revisa y se corrige el (los) modelo(s) y si es necesario se vuelve a la fase de Preparación de datos.</p></li>
+<li><p><strong>Evaluar:</strong> Cada uno de los modelos de datos con perspectiva de análisis, son evaluados según criterios de calidad.</p></li>
+<li><p><strong>Implrementación:</strong> En esta actividad, se realizan tareas que pueden ser simples o complejas, como la generación de reportes (gráficos o tablas estadísticas) o la implantación de una plataforma de explotación de información que proporcione acceso controlado a los usuarios tomadores de decisiones en toda la organización.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="Bibliografía">
+<h2>Bibliografía<a class="headerlink" href="#Bibliografía" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Cano, J. L. (2007). Business Intelligence: Competir Con Información. Banesto, Fundación Cultural, 397. Retrieved from <a class="reference external" href="http://itemsweb.esade.edu/biblioteca/archivo/Business_Intelligence_competir_con_informacion.pdf">Disponible</a></p>
+<p>De Mauro, A., Greco, M., &amp; Grimaldim, M. (2015). What is Big Data ? A Consensual Definition and a Review of Key Research Topics. In International Conference on Integrated Information (IC-ININFO 2014) (Vol. 1644, pp. 97–104). <a class="reference external" href="http://doi.org/10.1063/1.4907823">Disponible</a></p>
+<p>Mazon-Olivo, B., Pan, A., &amp; Tinoco-Egas, R. (2018). Capítulo 7: Inteligencia de negocios en el sector agropecuario. Análisis de Datos Agropecuarios. Retrieved from <a class="reference external" href="http://repositorio.utmachala.edu.ec/handle/48000/12540">Disponible</a></p>
+<p>Muñoz-Hernández, H., Osorio-Mass, R. C., &amp; Zúñiga-Pérez, L. M. (2016). Inteligencia de los negocios. Clave del Éxito en la era de la información. Clío América, 10(20), 194. <a class="reference external" href="https://doi.org/10.21676/23897848.1877">Disponible</a></p>
+<p>NIST Big Data Public Working Group. (2015). NIST Special Publication 1500-1 - NIST Big Data Interoperability Framework: Volume 1, Definitions. NIST Special Publication, 1, 32. <a class="reference external" href="http://dx.doi.org/10.6028/NIST.SP.1500-1">Disponible</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="03-introduccion-pbi.html" class="btn btn-neutral float-right" title="Introducción a Power BI (PBI)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="01-introduccion-bi.html" class="btn btn-neutral float-left" title="Introducción a la Inteligencia de Negocios (BI)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Dubadier Najar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

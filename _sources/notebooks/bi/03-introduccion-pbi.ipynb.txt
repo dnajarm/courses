@@ -1,0 +1,290 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Introducción a Power BI (PBI)\n",
+    "==========================\n",
+    "\n",
+    "90 min | Última modificación: Enero 08, 2020.\n",
+    "\n",
+    "## Herramientas de analítica de datos "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<iframe\n",
+    "    width=\"640\"\n",
+    "    height=\"480\"\n",
+    "    src=\"https://www.youtube.com/embed/AUB7-RrAvDM\"\n",
+    "    frameborder=\"0\"\n",
+    "    allow=\"autoplay; encrypted-media\"\n",
+    "    allowfullscreen\n",
+    ">\n",
+    "</iframe>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<iframe\n",
+    "    width=\"640\"\n",
+    "    height=\"480\"\n",
+    "    src=\"https://www.youtube.com/embed/g3UgavgmqvA\"\n",
+    "    frameborder=\"0\"\n",
+    "    allow=\"autoplay; encrypted-media\"\n",
+    "    allowfullscreen\n",
+    ">\n",
+    "</iframe>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "* La visualización de datos puede ayudar a contar la historia, transmitiendo problemas complejos con claridad. Puede desempeñar un papel clave para identificar la información importante del ruido, incluidos los valores atípicos y las anomalías.\n",
+    "\n",
+    "\n",
+    "* Puede ayudarlo a dominar su creciente volumen de datos. La interacción visual con grandes conjuntos de datos puede simplificar el análisis, revelando nuevos conocimientos empresariales.\n",
+    "\n",
+    "\n",
+    "* La visualización de datos puede ayudarlo a hacer todo eso, si tiene la herramienta adecuada.\n",
+    "Una herramienta de visualización de datos inteligente que incluya analítica mejorada basada en aprendizaje autónomo integrado debe tener el poder de ayudarlo con todos los pasos para analizar y transmitir información, comenzando con la preparación de datos. Tradicionalmente, la preparación de datos para el análisis ha sido un proceso manual, a menudo lento, frustrante y propenso a errores.\n",
+    "\n",
+    "\n",
+    "* Piense en una herramienta que pueda automatizar la preparación de datos al recopilar información de una o más fuentes y consolidarla. Esto acelera el proceso y reduce la posibilidad de errores. La herramienta también debería poder aumentar su análisis al recomendar la inclusión de nuevos conjuntos de datos en la revisión para obtener resultados más precisos.\n",
+    "\n",
+    "<div align=\"center\"><img src=\"./images/03-introduccion-pbi/Top-10-Business-Intelligence-Tools-01.jpg\" alt=\"Drawing\" style=\"width: 800px;\"/></div>\n",
+    "\n",
+    "\n",
+    "[Ver detalles de las aplicaciones](https://mopinion.com/business-intelligence-bi-tools-overview/)\n",
+    "\n",
+    "\n",
+    "**Cuadrante mágico de Gartner 2020**\n",
+    "\n",
+    "\n",
+    "<div align=\"center\"><img src=\"./images/03-introduccion-pbi/CATALOG_IMAGE_20200226095605820.jpg\" alt=\"Drawing\" style=\"width: 1080px;\"/></div>\n",
+    "\n",
+    "\n",
+    "Descripción del Cuadrante:\n",
+    "* Las ***empresas líderes*** son vendedores que son fuertes en la amplitud y profundidad de las capacidades de sus plataformas BI y pueden suministrar consultoría a las organizaciones de tal manera que puedan tener constante soporte en su estrategia BI. \n",
+    "\n",
+    "\n",
+    "* Por otro lado, se tienen a las ***empresas retadoras***, las cuales se están ubicando con éxito en el mercado a pesar de que están limitadas a casos específicos y sistemas técnicos concretos, además de deficiencias en la integración estratégica de sus productos, marketing, canales de ventas y presencia Geográfica.\n",
+    "\n",
+    "\n",
+    "* Las ***empresas visionarias*** son vendedores que tienen una fuerte visión sobre la importancia de hacer llegar al usuario una plataforma BI-Analytics lo suficientemente abierta y flexible fácilmente integrada a los procesos de la organización, además de profundizar en áreas específicas. No obstante, presentan brechas en cuanto a la amplitud de funcionalidades que muchas veces los usuarios requieren a su paso. Su fortaleza aún así está en su vocación innovadora.\n",
+    "\n",
+    "\n",
+    "* Las ***empresas enfocadas en nichos*** son aquellas que lo hacen bien en un segmento específico del mercado de plataformas.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Power BI\n",
+    "\n",
+    "----\n",
+    "\n",
+    "<div align=\"center\"><img src=\"./images/03-introduccion-pbi/power-bi.jpg\" alt=\"Drawing\" style=\"width: 1080px;\"/></div>\n",
+    "\n",
+    "***Power BI*** una herramienta creada por Microsoft para ayudar a analistas y directivos a crear informes y cuadros de mando. En la actualidad tenemos un escenario en el que el tratamiento y visualización de datos es una necesidad creciente para empresas y estructuras organizativas. Microsoft Power BI responde a esta necesidad, ya que permite crear informes analíticos con alto nivel de interactividad y dinamismo.\n",
+    "\n",
+    "Power BI es una herramienta robusta y de grado empresarial. Está listo para modelado extensivo y analítico en tiempo real y para la programación de usuarios. Power BI puede ser el motor que nos impulse a la toma de decisiones."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Las partes de Power BI\n",
+    "\n",
+    "\n",
+    "Power BI consta de varios elementos que funcionan juntos, empezando por estos tres conceptos básicos:\n",
+    "\n",
+    "Una aplicación de escritorio de Windows denominada **Power BI Desktop**.\n",
+    "\n",
+    "Un servicio SaaS en línea (Software as a Service) denominado **servicio Power BI**.\n",
+    "\n",
+    "Aplicaciones **móviles** de Power BI para dispositivos Windows, iOS y Android\n",
+    "\n",
+    "<img src=\"https://docs.microsoft.com/es-es/power-bi/fundamentals/media/power-bi-overview/power-bi-overview-blocks.png\">\n",
+    "\n",
+    "Estos tres elementos, —Power BI Desktop, el servicio y las aplicaciones móviles—, están diseñados para permitirle crear, compartir y usar información empresarial de la forma que le resulte más eficaz para usted y para su rol.\n",
+    "\n",
+    "Además de estos tres elementos, Power BI también incluye otros dos:\n",
+    "\n",
+    "* **Power BI Report Builder**, para crear informes paginados y compartirlos en el servicio Power BI. Obtenga más información sobre los informes paginados más adelante en este artículo.\n",
+    "* **Power BI Report Server**, un servidor de informes local en el que puede publicar los informes de Power BI, después de crearlos en Power BI Desktop. Obtenga más información sobre Power BI Report Server más adelante en este artículo.\n",
+    "\n",
+    "### ¿Qué es Power BI Desktop?\n",
+    "\n",
+    "**Power BI Desktop** es una aplicación gratuita que se puede instalar en el equipo local y que permite conectarse a los datos, transformarlos y visualizarlos. **Con Power BI Desktop**, puede conectarse a varios orígenes de datos diferentes y combinarlos (lo que se suele denominar modelado) en un modelo de datos. Este modelo de datos permite compilar objetos visuales y colecciones de objetos visuales que se pueden compartir como informes con otras personas de dentro de la organización. La mayoría de los usuarios que trabajan en proyectos de inteligencia empresarial usan **Power BI Desktop para crear informes y luego usan el servicio Power BI** para compartir los informes con otros.\n",
+    "\n",
+    "\n",
+    "<video src=\"https://powerbicdn.azureedge.net/cvt-e7b8c45d92ac6de5b2d30ffa0bc67bdf98faa26983bba90e315d35728c150703/pictures/pages/desktop/content5-create.mp4\" alt=\"Drawing\" style=\"width: 640px;\" controls>alternative text</video>\n",
+    "\n",
+    "\n",
+    "Los usos más comunes de Power BI Desktop son los siguientes:\n",
+    "\n",
+    "* **Conectar a datos**\n",
+    "    <img src=\"https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_02.png\">\n",
+    "    \n",
+    "    --------------\n",
+    "    \n",
+    "* **Transformar y limpiar datos, para crear un modelo de datos**\n",
+    "    En Power BI Desktop, puede limpiar y transformar los datos con el ***Editor de Power Query*** integrado.\n",
+    "    \n",
+    "     <img src=\"https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-getting-started/shapecombine_querysettingsfinished.png\">\n",
+    "  \n",
+    "    --------------\n",
+    "    \n",
+    "* **Crear objetos visuales, como gráficos o grafos, que proporcionan representaciones visuales de los datos**\n",
+    "    \n",
+    "    <img src=\"https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_04.png\">\n",
+    "    \n",
+    "    --------------\n",
+    "    \n",
+    "    Hay muchos tipos diferentes de objetos visuales entre los que elegir en ***Power BI Desktop***\n",
+    "    \n",
+    "    <img src=\"https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_05.png\">\n",
+    "    \n",
+    "    ---------------\n",
+    "    \n",
+    "* **Crear informes que son colecciones de objetos visuales, en una o varias páginas de informes**\n",
+    "    \n",
+    "    <img src=\"https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_01.png\">\n",
+    "    \n",
+    "    ----------------\n",
+    "    \n",
+    "* **Compartir informes con otros usuarios mediante el servicio Power BI**\n",
+    "\n",
+    "    <img src=\"https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_06.png\">\n",
+    "\n",
+    "Los usuarios que suelen ser responsables de esas tareas se suelen considerar analistas de datos (a los que a veces se hace referencia con el término analistas) o profesionales de inteligencia empresarial (a menudo conocidos como creadores de informes). Pero muchas personas que no se consideran analistas ni creadores de informes usan Power BI Desktop para crear informes atractivos o para extraer datos de varios orígenes y crear modelos de datos que luego pueden compartir con sus compañeros de trabajo y organizaciones.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Roles en un proyecto BI con Power BI\n",
+    "\n",
+    "Microsoft Power BI es una herramienta capaz de realizar el ciclo completo de un proyecto de Business Intelligence. \n",
+    "\n",
+    "#### Roles en el negocio\n",
+    "* Expertos en los orígenes de datos existentes, que nos dirán cómo y dónde conectar.\n",
+    "\n",
+    "* Directivos y expertos en el negocio como tal, que son posiblemente las personas más interesadas en obtener valor a partir del informe creado con Power BI. \n",
+    "\n",
+    "* Los analistas que consumen los informes actuales, los que existen antes de comenzar a trabajar con Power BI. \n",
+    "\n",
+    "* El personal administrativo conocedor de normas y procedimientos. Desde el lado de Power BI también nos encontramos con varios roles que van a depender de la función que se realice dentro del proyecto. \n",
+    "\n",
+    "#### Roles en Power BI\n",
+    "* Diseñador de conjuntos de datos, encargado de la conexión, extracción, transformación, carga y modelado de datos.\n",
+    "\n",
+    "* Diseñador de informes, encargado de dar vida a los informes utilizando tanto las visualizaciones como el modelo de datos.\n",
+    "\n",
+    "* El Administrador Power BI, que supervisa las tareas y controla la gestión de recursos. \n",
+    "\n",
+    "Desde el servidor de Power BI, y en caso de adoptar íntegramente esta suite de herramientas, encontramos el rol de gestor de la colaboración desde el servidor Power BI, que se encarga de tareas de configuración del almacenamiento, tareas de colaboración y seguridad en el acceso a los elementos almacenados en la nube de Power BI. El trabajo coordinado de todos estos roles posibilita realizar con éxito todas las etapas del ciclo de vida de Power BI."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Instalación de Power BI\n",
+    "\n",
+    "Descargue e instale la App Power BI Desktop desde la siguiente URL https://powerbi.microsoft.com/es-es/desktop/\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<iframe\n",
+    "    width=\"640\"\n",
+    "    height=\"480\"\n",
+    "    src=\"https://www.youtube.com/embed/XhCY0A3h0q4\"\n",
+    "    frameborder=\"0\"\n",
+    "    allow=\"autoplay; encrypted-media\"\n",
+    "    allowfullscreen\n",
+    ">\n",
+    "</iframe>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Interfaces de Power BI Desktop\n",
+    "\n",
+    "Al iniciar Power BI Desktop, aparecerá el cuadro de diálogo Introducción, que proporciona vínculos útiles a foros, blogs y vídeos introductorios.\n",
+    "\n",
+    "En Power BI Desktop, comenzará a crear informes en la vista Informe. Trabajarás en cinco áreas principales:\n",
+    "\n",
+    "--------------\n",
+    "\n",
+    "<div align=\"center\"><img src=\"./images/03-introduccion-pbi/Imagen1.png\" alt=\"Drawing\" style=\"width: 1080px;\"/></div>\n",
+    "\n",
+    "1. **Cinta de opciones:** muestra las tareas comunes asociadas a informes y visualizaciones.\n",
+    "\n",
+    "\n",
+    "2. **Vistas**: La vista actual se indica mediante la barra amarilla situada a la izquierda y puede cambiar de vista si selecciona cualquiera de los iconos.\n",
+    "\n",
+    "    2.1. La ***Visa informe o lienz***, es la zona donde se crean y organizan las visualizaciones.\n",
+    "\n",
+    "    2.2. La ***vista datos*** le permite ver todos los datos disponibles en el informe. Esta es una manera fácil de comprobar rápidamente los tipos de datos y validar los datos.\n",
+    "    \n",
+    "    2.3. La ***vista modelo*** permite establecer visualmente la relación entre tablas o elementos. Una relación es donde dos o más tablas están vinculadas entre sí porque contienen datos relacionados. Esto permite a los usuarios ejecutar consultas para datos relacionados en varias tablas.\n",
+    "    \n",
+    "    \n",
+    "3. **Pestaña Páginas:** situada en la parte inferior de la página, esta área es donde seleccionaría o agregaría una página de informe.\n",
+    "\n",
+    "\n",
+    "4. **Panel Visualizaciones:** donde puede cambiar visualizaciones, personalizar colores o ejes, aplicar filtros, arrastrar campos y mucho más.\n",
+    "\n",
+    "\n",
+    "5. **Panel Campos:** donde los elementos de consulta y los filtros se pueden arrastrar a la vista Informe o arrastrarse al área Filtros del panel Visualizaciones.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Material Complementario\n",
+    "\n",
+    "[¿Qué es Power BI Desktop?](https://docs.microsoft.com/es-es/power-bi/fundamentals/desktop-what-is-desktop)\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}

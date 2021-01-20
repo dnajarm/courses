@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Introducción a Power BI (PBI) &mdash; documentación de Cursos - 1.0</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="Obtención y preparación de datos con PBI (BI)" href="04-obtener-datos-y-preparar-datos.html" />
+    <link rel="prev" title="Fundamentos de inteligencia de negocios (BI)" href="02-fundamentos-de-bi.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Cursos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Cursos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion_a_la_ciencia_de_datos/index.html">Introducción a la ciencia de datos con Python</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../introduccion-al-business-intelligence/index.html">Introducción a la inteligencia de negocios con PBI</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion-al-business-intelligence/course-info.html">Información del curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion-al-business-intelligence/repositorio.html">Repositorio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01-introduccion-bi.html">Introducción a la Inteligencia de Negocios (BI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-fundamentos-de-bi.html">Fundamentos de inteligencia de negocios (BI)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Introducción a Power BI (PBI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04-obtener-datos-y-preparar-datos.html">Obtención y preparación de datos con PBI (BI)</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Cursos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../introduccion-al-business-intelligence/index.html">Introducción a la inteligencia de negocios con PBI</a> &raquo;</li>
+        
+      <li>Introducción a Power BI (PBI)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/notebooks/bi/03-introduccion-pbi.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Introducción-a-Power-BI-(PBI)">
+<h1>Introducción a Power BI (PBI)<a class="headerlink" href="#Introducción-a-Power-BI-(PBI)" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>90 min | Última modificación: Enero 08, 2020.</p>
+<div class="section" id="Herramientas-de-analítica-de-datos">
+<h2>Herramientas de analítica de datos<a class="headerlink" href="#Herramientas-de-analítica-de-datos" title="Enlazar permanentemente con este título">¶</a></h2>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/AUB7-RrAvDM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><iframe width="640" height="480" src="https://www.youtube.com/embed/g3UgavgmqvA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><ul class="simple">
+<li><p>La visualización de datos puede ayudar a contar la historia, transmitiendo problemas complejos con claridad. Puede desempeñar un papel clave para identificar la información importante del ruido, incluidos los valores atípicos y las anomalías.</p></li>
+<li><p>Puede ayudarlo a dominar su creciente volumen de datos. La interacción visual con grandes conjuntos de datos puede simplificar el análisis, revelando nuevos conocimientos empresariales.</p></li>
+<li><p>La visualización de datos puede ayudarlo a hacer todo eso, si tiene la herramienta adecuada. Una herramienta de visualización de datos inteligente que incluya analítica mejorada basada en aprendizaje autónomo integrado debe tener el poder de ayudarlo con todos los pasos para analizar y transmitir información, comenzando con la preparación de datos. Tradicionalmente, la preparación de datos para el análisis ha sido un proceso manual, a menudo lento, frustrante y propenso a errores.</p></li>
+<li><p>Piense en una herramienta que pueda automatizar la preparación de datos al recopilar información de una o más fuentes y consolidarla. Esto acelera el proceso y reduce la posibilidad de errores. La herramienta también debería poder aumentar su análisis al recomendar la inclusión de nuevos conjuntos de datos en la revisión para obtener resultados más precisos.</p></li>
+</ul>
+<div align="center"><p><img alt="Drawing" src="../../_images/Top-10-Business-Intelligence-Tools-01.jpg" /></p>
+</div><p><a class="reference external" href="https://mopinion.com/business-intelligence-bi-tools-overview/">Ver detalles de las aplicaciones</a></p>
+<p><strong>Cuadrante mágico de Gartner 2020</strong></p>
+<div align="center"><p><img alt="Drawing" src="../../_images/CATALOG_IMAGE_20200226095605820.jpg" /></p>
+</div><p>Descripción del Cuadrante: * Las <strong>empresas líderes</strong> son vendedores que son fuertes en la amplitud y profundidad de las capacidades de sus plataformas BI y pueden suministrar consultoría a las organizaciones de tal manera que puedan tener constante soporte en su estrategia BI.</p>
+<ul class="simple">
+<li><p>Por otro lado, se tienen a las <strong>empresas retadoras</strong>, las cuales se están ubicando con éxito en el mercado a pesar de que están limitadas a casos específicos y sistemas técnicos concretos, además de deficiencias en la integración estratégica de sus productos, marketing, canales de ventas y presencia Geográfica.</p></li>
+<li><p>Las <strong>empresas visionarias</strong> son vendedores que tienen una fuerte visión sobre la importancia de hacer llegar al usuario una plataforma BI-Analytics lo suficientemente abierta y flexible fácilmente integrada a los procesos de la organización, además de profundizar en áreas específicas. No obstante, presentan brechas en cuanto a la amplitud de funcionalidades que muchas veces los usuarios requieren a su paso. Su fortaleza aún así está en su vocación innovadora.</p></li>
+<li><p>Las <strong>empresas enfocadas en nichos</strong> son aquellas que lo hacen bien en un segmento específico del mercado de plataformas.</p></li>
+</ul>
+</div>
+<div class="section" id="Power-BI">
+<h2>Power BI<a class="headerlink" href="#Power-BI" title="Enlazar permanentemente con este título">¶</a></h2>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="../../_images/power-bi.jpg" /></p>
+</div><p><strong>Power BI</strong> una herramienta creada por Microsoft para ayudar a analistas y directivos a crear informes y cuadros de mando. En la actualidad tenemos un escenario en el que el tratamiento y visualización de datos es una necesidad creciente para empresas y estructuras organizativas. Microsoft Power BI responde a esta necesidad, ya que permite crear informes analíticos con alto nivel de interactividad y dinamismo.</p>
+<p>Power BI es una herramienta robusta y de grado empresarial. Está listo para modelado extensivo y analítico en tiempo real y para la programación de usuarios. Power BI puede ser el motor que nos impulse a la toma de decisiones.</p>
+<div class="section" id="Las-partes-de-Power-BI">
+<h3>Las partes de Power BI<a class="headerlink" href="#Las-partes-de-Power-BI" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Power BI consta de varios elementos que funcionan juntos, empezando por estos tres conceptos básicos:</p>
+<p>Una aplicación de escritorio de Windows denominada <strong>Power BI Desktop</strong>.</p>
+<p>Un servicio SaaS en línea (Software as a Service) denominado <strong>servicio Power BI</strong>.</p>
+<p>Aplicaciones <strong>móviles</strong> de Power BI para dispositivos Windows, iOS y Android</p>
+<p><img alt="0bebedbd6fa74189887101f490aaaa0a" src="https://docs.microsoft.com/es-es/power-bi/fundamentals/media/power-bi-overview/power-bi-overview-blocks.png" /></p>
+<p>Estos tres elementos, —Power BI Desktop, el servicio y las aplicaciones móviles—, están diseñados para permitirle crear, compartir y usar información empresarial de la forma que le resulte más eficaz para usted y para su rol.</p>
+<p>Además de estos tres elementos, Power BI también incluye otros dos:</p>
+<ul class="simple">
+<li><p><strong>Power BI Report Builder</strong>, para crear informes paginados y compartirlos en el servicio Power BI. Obtenga más información sobre los informes paginados más adelante en este artículo.</p></li>
+<li><p><strong>Power BI Report Server</strong>, un servidor de informes local en el que puede publicar los informes de Power BI, después de crearlos en Power BI Desktop. Obtenga más información sobre Power BI Report Server más adelante en este artículo.</p></li>
+</ul>
+</div>
+<div class="section" id="¿Qué-es-Power-BI-Desktop?">
+<h3>¿Qué es Power BI Desktop?<a class="headerlink" href="#¿Qué-es-Power-BI-Desktop?" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>Power BI Desktop</strong> es una aplicación gratuita que se puede instalar en el equipo local y que permite conectarse a los datos, transformarlos y visualizarlos. <strong>Con Power BI Desktop</strong>, puede conectarse a varios orígenes de datos diferentes y combinarlos (lo que se suele denominar modelado) en un modelo de datos. Este modelo de datos permite compilar objetos visuales y colecciones de objetos visuales que se pueden compartir como informes con otras personas de dentro de la organización. La mayoría
+de los usuarios que trabajan en proyectos de inteligencia empresarial usan <strong>Power BI Desktop para crear informes y luego usan el servicio Power BI</strong> para compartir los informes con otros.</p>
+<video src="https://powerbicdn.azureedge.net/cvt-e7b8c45d92ac6de5b2d30ffa0bc67bdf98faa26983bba90e315d35728c150703/pictures/pages/desktop/content5-create.mp4" alt="Drawing" style="width: 640px;" controls><p>alternative text</p>
+</video><p>Los usos más comunes de Power BI Desktop son los siguientes:</p>
+<ul>
+<li><p><strong>Conectar a datos</strong> <img alt="b9a72c8f1b5741e38ab2510bc1bd937e" src="https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_02.png" /></p></li>
+<li><p><strong>Transformar y limpiar datos, para crear un modelo de datos</strong> En Power BI Desktop, puede limpiar y transformar los datos con el <strong>Editor de Power Query</strong> integrado.</p>
+<p><img alt="b93cc2b4e3fa49b998697ebd8fb896ad" src="https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-getting-started/shapecombine_querysettingsfinished.png" /></p>
+</li>
+<li><p><strong>Crear objetos visuales, como gráficos o grafos, que proporcionan representaciones visuales de los datos</strong></p>
+<p><img alt="ebe97d9324fa4e0b92b2719f5c271e3a" src="https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_04.png" /></p>
+<p>Hay muchos tipos diferentes de objetos visuales entre los que elegir en <strong>Power BI Desktop</strong></p>
+<p><img alt="3162ae315bed41ebbca6779dc5c11a91" src="https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_05.png" /></p>
+</li>
+<li><p><strong>Crear informes que son colecciones de objetos visuales, en una o varias páginas de informes</strong></p>
+<p><img alt="9cd332322a4b41febdb1bd184c14f79f" src="https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_01.png" /></p>
+</li>
+<li><p><strong>Compartir informes con otros usuarios mediante el servicio Power BI</strong></p>
+<p><img alt="208fc2ed01d14b0b9e8d588fdae8bc1c" src="https://docs.microsoft.com/es-es/power-bi/fundamentals/media/desktop-what-is-desktop/what-is-desktop_06.png" /></p>
+</li>
+</ul>
+<p>Los usuarios que suelen ser responsables de esas tareas se suelen considerar analistas de datos (a los que a veces se hace referencia con el término analistas) o profesionales de inteligencia empresarial (a menudo conocidos como creadores de informes). Pero muchas personas que no se consideran analistas ni creadores de informes usan Power BI Desktop para crear informes atractivos o para extraer datos de varios orígenes y crear modelos de datos que luego pueden compartir con sus compañeros de
+trabajo y organizaciones.</p>
+</div>
+<div class="section" id="Roles-en-un-proyecto-BI-con-Power-BI">
+<h3>Roles en un proyecto BI con Power BI<a class="headerlink" href="#Roles-en-un-proyecto-BI-con-Power-BI" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Microsoft Power BI es una herramienta capaz de realizar el ciclo completo de un proyecto de Business Intelligence.</p>
+<div class="section" id="Roles-en-el-negocio">
+<h4>Roles en el negocio<a class="headerlink" href="#Roles-en-el-negocio" title="Enlazar permanentemente con este título">¶</a></h4>
+<ul class="simple">
+<li><p>Expertos en los orígenes de datos existentes, que nos dirán cómo y dónde conectar.</p></li>
+<li><p>Directivos y expertos en el negocio como tal, que son posiblemente las personas más interesadas en obtener valor a partir del informe creado con Power BI.</p></li>
+<li><p>Los analistas que consumen los informes actuales, los que existen antes de comenzar a trabajar con Power BI.</p></li>
+<li><p>El personal administrativo conocedor de normas y procedimientos. Desde el lado de Power BI también nos encontramos con varios roles que van a depender de la función que se realice dentro del proyecto.</p></li>
+</ul>
+</div>
+<div class="section" id="Roles-en-Power-BI">
+<h4>Roles en Power BI<a class="headerlink" href="#Roles-en-Power-BI" title="Enlazar permanentemente con este título">¶</a></h4>
+<ul class="simple">
+<li><p>Diseñador de conjuntos de datos, encargado de la conexión, extracción, transformación, carga y modelado de datos.</p></li>
+<li><p>Diseñador de informes, encargado de dar vida a los informes utilizando tanto las visualizaciones como el modelo de datos.</p></li>
+<li><p>El Administrador Power BI, que supervisa las tareas y controla la gestión de recursos.</p></li>
+</ul>
+<p>Desde el servidor de Power BI, y en caso de adoptar íntegramente esta suite de herramientas, encontramos el rol de gestor de la colaboración desde el servidor Power BI, que se encarga de tareas de configuración del almacenamiento, tareas de colaboración y seguridad en el acceso a los elementos almacenados en la nube de Power BI. El trabajo coordinado de todos estos roles posibilita realizar con éxito todas las etapas del ciclo de vida de Power BI.</p>
+</div>
+</div>
+</div>
+<div class="section" id="Instalación-de-Power-BI">
+<h2>Instalación de Power BI<a class="headerlink" href="#Instalación-de-Power-BI" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Descargue e instale la App Power BI Desktop desde la siguiente URL <a class="reference external" href="https://powerbi.microsoft.com/es-es/desktop/">https://powerbi.microsoft.com/es-es/desktop/</a></p>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/XhCY0A3h0q4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="section" id="Interfaces-de-Power-BI-Desktop">
+<h2>Interfaces de Power BI Desktop<a class="headerlink" href="#Interfaces-de-Power-BI-Desktop" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Al iniciar Power BI Desktop, aparecerá el cuadro de diálogo Introducción, que proporciona vínculos útiles a foros, blogs y vídeos introductorios.</p>
+<p>En Power BI Desktop, comenzará a crear informes en la vista Informe. Trabajarás en cinco áreas principales:</p>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="../../_images/Imagen1.png" /></p>
+</div><ol class="arabic">
+<li><p><strong>Cinta de opciones:</strong> muestra las tareas comunes asociadas a informes y visualizaciones.</p></li>
+<li><p><strong>Vistas</strong>: La vista actual se indica mediante la barra amarilla situada a la izquierda y puede cambiar de vista si selecciona cualquiera de los iconos.</p>
+<p>2.1. La <strong>Visa informe o lienz</strong>, es la zona donde se crean y organizan las visualizaciones.</p>
+<p>2.2. La <strong>vista datos</strong> le permite ver todos los datos disponibles en el informe. Esta es una manera fácil de comprobar rápidamente los tipos de datos y validar los datos.</p>
+<p>2.3. La <strong>vista modelo</strong> permite establecer visualmente la relación entre tablas o elementos. Una relación es donde dos o más tablas están vinculadas entre sí porque contienen datos relacionados. Esto permite a los usuarios ejecutar consultas para datos relacionados en varias tablas.</p>
+</li>
+<li><p><strong>Pestaña Páginas:</strong> situada en la parte inferior de la página, esta área es donde seleccionaría o agregaría una página de informe.</p></li>
+<li><p><strong>Panel Visualizaciones:</strong> donde puede cambiar visualizaciones, personalizar colores o ejes, aplicar filtros, arrastrar campos y mucho más.</p></li>
+<li><p><strong>Panel Campos:</strong> donde los elementos de consulta y los filtros se pueden arrastrar a la vista Informe o arrastrarse al área Filtros del panel Visualizaciones.</p></li>
+</ol>
+</div>
+<div class="section" id="Material-Complementario">
+<h2>Material Complementario<a class="headerlink" href="#Material-Complementario" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://docs.microsoft.com/es-es/power-bi/fundamentals/desktop-what-is-desktop">¿Qué es Power BI Desktop?</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="04-obtener-datos-y-preparar-datos.html" class="btn btn-neutral float-right" title="Obtención y preparación de datos con PBI (BI)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="02-fundamentos-de-bi.html" class="btn btn-neutral float-left" title="Fundamentos de inteligencia de negocios (BI)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Dubadier Najar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

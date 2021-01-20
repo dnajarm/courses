@@ -1,0 +1,414 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Obtención y preparación de datos con PBI (BI) &mdash; documentación de Cursos - 1.0</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="prev" title="Introducción a Power BI (PBI)" href="03-introduccion-pbi.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Cursos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Cursos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion_a_la_ciencia_de_datos/index.html">Introducción a la ciencia de datos con Python</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../introduccion-al-business-intelligence/index.html">Introducción a la inteligencia de negocios con PBI</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion-al-business-intelligence/course-info.html">Información del curso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion-al-business-intelligence/repositorio.html">Repositorio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01-introduccion-bi.html">Introducción a la Inteligencia de Negocios (BI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-fundamentos-de-bi.html">Fundamentos de inteligencia de negocios (BI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03-introduccion-pbi.html">Introducción a Power BI (PBI)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Obtención y preparación de datos con PBI (BI)</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Cursos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../introduccion-al-business-intelligence/index.html">Introducción a la inteligencia de negocios con PBI</a> &raquo;</li>
+        
+      <li>Obtención y preparación de datos con PBI (BI)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/notebooks/bi/04-obtener-datos-y-preparar-datos.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Obtención-y-preparación-de-datos-con-PBI-(BI)">
+<h1>Obtención y preparación de datos con PBI (BI)<a class="headerlink" href="#Obtención-y-preparación-de-datos-con-PBI-(BI)" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>90 min | Última modificación: Enero 08, 2020.</p>
+<div class="section" id="Ciclo-de-vida-de-Power-BI">
+<h2>Ciclo de vida de Power BI<a class="headerlink" href="#Ciclo-de-vida-de-Power-BI" title="Enlazar permanentemente con este título">¶</a></h2>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="../../_images/imagen2.png" /></p>
+</div></div>
+<div class="section" id="Conectar-a-datos">
+<h2>Conectar a datos<a class="headerlink" href="#Conectar-a-datos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para empezar a trabajar con Power BI Desktop, el primer paso es conectarse a los datos. Hay muchos orígenes de datos distintos a los que es posible conectarse desde Power BI Desktop.</p>
+<p>Para conectarse a los datos:</p>
+<p>En la <strong>cinta Inicio, seleccione Obtener datos &gt; Más</strong>.</p>
+<p>Aparece la ventana Obtener datos, que muestra muchas categorías a las que Power BI Desktop puede conectarse.</p>
+<video src="https://powerbicdn.azureedge.net/cvt-39a2cf59debacc57060619a1a298aa05681acc784e2356054eb9fbc90d103bf4/pictures/pages/desktop/content1-connect.mp4" alt="Drawing" style="width: 640px;" controls><p>alternative text</p>
+</video><p>Desde la secretaría de agricultura quieren conocer el estado Desde la secretaría de agricultura quieren conocer la evolución de la producción agrícola nacional desagregada por departamento y grupo de cultivo, esto con el fin de poder enfocar las políticas agrarias a cada una de las unidades productivas. La página Datos abiertos en <a class="reference external" href="https://www.datos.gov.co/">https://www.datos.gov.co/</a> contiene datos interesantes al respecto.</p>
+<div class="section" id="Obtener-datos-externos">
+<h3>Obtener datos externos<a class="headerlink" href="#Obtener-datos-externos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En la pestaña Inicio de Power BI Desktop, seleccione Obtener datos &gt; <strong>Fuente OData</strong> para conectarse a un origen de datos Open Data.</p>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="../../_images/Imagen3.jpg" /></p>
+</div><table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>En el cuadro de diálogo De web, pegue la dirección
+<strong>https://www.datos.gov.co/api/odata/v4/2pnw-mmge</strong> en el campo Dirección
+URL y seleccione <strong>Aceptar</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+<div align="center"><p><img alt="Drawing" src="../../_images/Captura.JPG" /></p>
+</div><p>Si se le solicita, en la pantalla Acceder a contenido web, seleccione Conectar para usar el acceso anónimo.</p>
+<p>La funcionalidad de consulta de PBI devuelve lo que se ha encontrado en la Dirección URL, en este caso, una vista previa con los datos de la producción agricola nacional.</p>
+<p>En este momento, puede seleccionar <strong>Cargar</strong> para cargar la tabla, o bien <strong>Transformar datos</strong> para realizar cambios en la tabla antes de cargarlos.</p>
+<div align="center"><p><img alt="Drawing" src="../../_images/Captura5.JPG" /></p>
+</div></div>
+<div class="section" id="Obtener-datos-desde-un-libro-de-excel">
+<h3>Obtener datos desde un libro de excel<a class="headerlink" href="#Obtener-datos-desde-un-libro-de-excel" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En la pestaña Inicio de Power BI Desktop, seleccione Obtener datos &gt; <strong>Excel</strong> para conectarse a un origen de datos EXcel.</p>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="../../_images/Imagen11.png" /></p>
+</div><p>Bien, nos vamos a conectar a Excel y lo que tenemos es la lista de los archivos de tipo Excel.</p>
+<div align="center"><p><img alt="Drawing" src="../../_images/Imagen3.png" /></p>
+</div><p>Existe una tabla que se llama Ventas y una hoja o ficha de Excel que se llama Cantidades vendidas. Escogemos la tabla. Siempre que podemos es mejor trabajar con tablas.</p>
+<div align="center"><p><img alt="Drawing" src="../../_images/Imagen4.png" /></p>
+</div><p>Ahora que se ha conectado a un origen de datos, puede ajustar los datos según sea necesario. Para dar forma a los datos, proporcione al Editor de <strong>Power Query/Transformar datos</strong> instrucciones paso a paso para ajustar los datos mientras los carga y presenta. La operación de dar forma no afecta al origen de datos original, solo a esta vista concreta de los datos.</p>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="../../_images/Imagen7.png" /></p>
+</div></div>
+</div>
+<div class="section" id="Transformar-los-datos">
+<h2>Transformar los datos<a class="headerlink" href="#Transformar-los-datos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para obtener informes con buena calidad hay que empezar por tener los datos limpios y bien preparados.</p>
+<p><strong>Causas de problemas de calidad</strong></p>
+<ul class="simple">
+<li><p>Error en la entrada de datos en origen.</p></li>
+<li><p>Error en los procesos de carga y sincronización, esto provoca que haya inconsistencia en los datos.</p></li>
+<li><p>Valores para los que no se tienen datos de origen. Posibles valores que pueden tomar: blanco, “Null”, nulo, “N/A”,…</p></li>
+</ul>
+<p><strong>Problemas de calidad de datos</strong></p>
+<ul class="simple">
+<li><p><em>Valores repetidos:</em> pueden sesgar la muestra, y como impiden la correcta relación entre las tablas en los modelos de Power BI, son muy dañinos en ficheros maestros.</p></li>
+<li><p><em>Valores ausentes:</em> pueden inutilizar toda la fila de datos, lo cual, en ocasiones es muy grave por la pérdida de información valiosa almacenada en el resto de las columnas y porque pueden distorsionar los hechos, especialmente en los cálculos que se realizan o en el análisis de patrones de comportamiento de la muestra de datos.</p></li>
+</ul>
+<p><strong>Solución a problemas de calidad de datos</strong></p>
+<ul class="simple">
+<li><p><em>Valores repetidos:</em> Quitar duplicados</p></li>
+<li><p><em>Valores ausentes:</em> Rellenar hacia abajo o hacia arriba, reemplazar valores según la regla de negocio a aplicar.</p></li>
+<li><p>Para controlar los errores de calidad de datos en columnas de tipo texto utilizamos también opciones de limpieza de espacios al inicio y al final de las cadenas, así como el tratamiento de mayúsculas y minúsculas.</p></li>
+</ul>
+<div class="section" id="Ejemplo-1-en-Power-BI">
+<h3>Ejemplo 1 en Power BI<a class="headerlink" href="#Ejemplo-1-en-Power-BI" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Descargue los archivos de trabajo desde el repositorio <a class="reference external" href="https://github.com/dnajarm/power-bi">https://github.com/dnajarm/power-bi</a></p>
+<p>Un informe analítico requiere contar con las filas de datos necesarias y que además tengan calidad. Sobre el archivo <strong>Ventas Originales.xlsx</strong> que se encuentra en la carpeta <strong>04-obtener-datos-y-preparar-datos</strong> realice las siguientes tareas:</p>
+<ol class="arabic simple">
+<li><p>Importar desde un origen externo la hoja Ventas.</p></li>
+</ol>
+<p><strong>Proceso de limpieza y calidad de datos</strong></p>
+<ol class="arabic simple" start="2">
+<li><p>Reducir las filas quitando las tres filas superiores.</p></li>
+<li><p>Utilizar la primera fila como encabezado.</p></li>
+<li><p>Eliminar las filas que contengan Total y Total general.</p></li>
+<li><p>Quitar solo las filas en blanco.</p></li>
+<li><p>Eliminar las columnas que sobran (total general).</p></li>
+</ol>
+<p><strong>Completar valores ausentes rellenando filas de datos</strong></p>
+<ol class="arabic simple" start="7">
+<li><p>Rellenar hacia abajo la columna país.</p></li>
+<li><p>Sustituir ese valor null que existe en las columnas numéricas por un cero o por algún elemento que se corresponda a la lógica de negocio.</p></li>
+</ol>
+<p>De esta forma, han quedado limpios todos esos vacíos que teníamos en el dato original.</p>
+</div>
+<div class="section" id="Ejemplo-2-en-Power-BI---Problemas-de-espacios">
+<h3>Ejemplo 2 en Power BI - Problemas de espacios<a class="headerlink" href="#Ejemplo-2-en-Power-BI---Problemas-de-espacios" title="Enlazar permanentemente con este título">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Importar desde un origen externo la hoja Datos con espacios.</p></li>
+</ol>
+<p><strong>Proceso de limpieza y calidad de datos</strong></p>
+<ol class="arabic simple" start="2">
+<li><p>Utilizar la primera fila como encabezado.</p></li>
+<li><p>Pruebe cambiar las columnas a formato númerico.</p></li>
+<li><p>Sustituir los espacios de toda la tabla.</p></li>
+<li><p>Cambiar el formato a Número decimal</p></li>
+</ol>
+</div>
+<div class="section" id="Ejemplo-3-en-Power-BI---Problemas-de-mayúsculas-y-minúsculas">
+<h3>Ejemplo 3 en Power BI - Problemas de mayúsculas y minúsculas<a class="headerlink" href="#Ejemplo-3-en-Power-BI---Problemas-de-mayúsculas-y-minúsculas" title="Enlazar permanentemente con este título">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Importar desde un origen externo la hoja Pais-ciudad.</p></li>
+</ol>
+<p><strong>Proceso de limpieza y calidad de datos</strong></p>
+<ol class="arabic simple" start="2">
+<li><p>Reducir las filas quitando las filas superiores.</p></li>
+<li><p>Utilizar la primera fila como encabezado.</p></li>
+<li><p>Corregir el formato de los registros españa y BOGOTÁ.</p></li>
+<li><p>Corregir el registro Mexico por México</p></li>
+<li><p>Eliminar espacios en blanco al inicio y fin de cada palabra.</p></li>
+</ol>
+</div>
+<div class="section" id="Agregar-columnas-desde-Power-Query">
+<h3>Agregar columnas desde Power Query<a class="headerlink" href="#Agregar-columnas-desde-Power-Query" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En <strong>Power BI Desktop</strong> puede agregar fácilmente una nueva columna personalizada de datos al modelo mediante el <strong>Editor de consultas</strong>. Con el Editor de consultas, puede crear y cambiar el nombre de la columna personalizada para crear consultas de fórmula de <strong>Power Query M</strong> y así definir la columna personalizada. La fórmula de <strong>Power Query M</strong> tiene un conjunto de contenido de referencia de función completo.</p>
+<p>Cuando se crea una columna personalizada en el Editor de consultas, <strong>Power BI Desktop</strong> la agrega como un paso aplicado en la Configuración de la consulta de la consulta. Esto se puede cambiar, migrar o modificar en cualquier momento.</p>
+<hr class="docutils" />
+<div align="center"><p><img alt="Drawing" src="https://docs.microsoft.com/es-es/power-bi/create-reports/media/desktop-add-custom-column/add-custom-column_01.png" /></p>
+</div></div>
+<div class="section" id="Ejemplo-4-en-Power-BI---Agregar-columna-personalizada">
+<h3>Ejemplo 4 en Power BI - Agregar columna personalizada<a class="headerlink" href="#Ejemplo-4-en-Power-BI---Agregar-columna-personalizada" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Sobre el archivo <strong>Datos.xlsx</strong> que se encuentra en la carpeta files/04-obtener-datos-y-preparar-datos realice las siguientes tareas:</p>
+<ol class="arabic simple">
+<li><p>Importar desde un origen externo la hoja Datos.</p></li>
+</ol>
+<p><strong>Proceso de limpieza y calidad de datos</strong></p>
+<ol class="arabic simple" start="2">
+<li><p>Crear una columna personalizada llamada identificador con las columnas “País”, “Código”, “Ciudad”. Sobre el primer registros cree un patrón con los dos últimos dígitos de la columna Código, un guion, las tres primeras letras del país en mayúscula, otro guion, el resto de los dígitos del código, otro guion y las tres primeras letras tal y como aparecen de la ciudad.</p></li>
+<li><p>Ayude a power BI, vuelva y repita el proceso anterior con el siguiente registro.</p></li>
+<li><p>Crear una columna personalizada llamada Mes Abreviado a partir de la columna Fecha. Sobre el primer registro cree un patrón de mes, así: para 01/06/2019 –&gt; Jun, 02/05/2019 –&gt; May ,…</p></li>
+</ol>
+</div>
+<div class="section" id="Ejemplo-5-en-Power-BI---Agregar-columna-personalizada">
+<h3>Ejemplo 5 en Power BI - Agregar columna personalizada<a class="headerlink" href="#Ejemplo-5-en-Power-BI---Agregar-columna-personalizada" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Con frecuencia, necesitamos crear nuevas columnas cuyo contenido dependa de la evaluación de una o varias condiciones que se aplican a los datos y a las columnas que tenemos actualmente en la consulta.</p>
+<p>Sobre el archivo <strong>Ingresos.txt</strong> que se encuentra en la carpeta files/04-obtener-datos-y-preparar-datos realice las siguientes tareas:</p>
+<ol class="arabic simple">
+<li><p>Importar desde un origen externo Texto o CSV.</p></li>
+</ol>
+<p><strong>Proceso de limpieza y calidad de datos</strong></p>
+<ol class="arabic" start="2">
+<li><div class="line-block">
+<div class="line">Agregar una columna condicional, llamela “Región / Continente”. Evalúe la siguiente condición sobre la columna País:</div>
+<div class="line">Si País = España –&gt; Salida = Europa</div>
+<div class="line">Si País = Méxito –&gt; Salida = América del Norte</div>
+<div class="line">De lo contrario –&gt; Salida = América Central y del Sur</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Agregar una columna condicional, llamela “Resultado”. Evalúe la siguiente condición sobre la columna Gasto:</div>
+<div class="line">Si Gasto &lt; Ingreso –&gt; Salida = Ok</div>
+<div class="line">De lo contrario –&gt; Salida = No OK</div>
+</div>
+</li>
+<li><p>Cambiar el formato de las columnas anteriores por texto.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="Material-Complementario">
+<h2>Material Complementario<a class="headerlink" href="#Material-Complementario" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://docs.microsoft.com/es-es/power-bi/fundamentals/desktop-getting-started">Introducción a Power BI Desktop</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="03-introduccion-pbi.html" class="btn btn-neutral float-left" title="Introducción a Power BI (PBI)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Dubadier Najar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

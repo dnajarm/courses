@@ -1,0 +1,20 @@
+Bienvenido a los cursos de Business Analytics
+====================================================================
+
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Cursos
+   :hidden:
+   :titlesonly:
+
+   introduccion_a_la_ciencia_de_datos/index
+   introduccion-al-business-intelligence/index
+
+
+Los contenidos de estos cursos están orientados a aquellos que no tienen experiencia en analítica de negocios, y 
+tiene como objetivo principal entregar herramientas necesarias para que el estudiante pueda automatizar tareas comunes, 
+manipular archivos y obtener información de otras fuentes de datos de manera eficiente, transformando los datos en información
+mediante la representación gráficamente de manera sencilla y dinámica, que será útil para tomar acciones que ayuden mejorar los 
+resultados en las organizaciones. Todas estas tareas pueden ser realizadas usando la herramienta adecuada sin necesided de convertirse en un experto del tema.
+
