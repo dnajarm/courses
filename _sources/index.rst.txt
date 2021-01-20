@@ -3,7 +3,7 @@ Bienvenido a los cursos de Business Analytics
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
    :caption: Cursos
    :hidden:
    :titlesonly:

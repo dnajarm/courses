@@ -117,7 +117,7 @@
     "\n",
     "Descargue los archivos de trabajo desde el repositorio https://github.com/dnajarm/power-bi\n",
     "\n",
-    "Un informe analítico requiere contar con las filas de datos necesarias y que además tengan calidad. Sobre el archivo ***Ventas Originales.xlsx*** que se encuentra en la carpeta ***04-obtener-datos-y-preparar-datos*** realice las siguientes tareas:\n",
+    "Un informe analítico requiere contar con las filas de datos necesarias y que además tengan calidad. Sobre el archivo ***Ventas Originales.xlsx*** que se encuentra en la carpeta ***obtener-datos-y-preparar-datos*** realice las siguientes tareas:\n",
     "\n",
     "1. Importar desde un origen externo la hoja Ventas.\n",
     "\n",

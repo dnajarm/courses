@@ -13,11 +13,20 @@ Introducción a la inteligencia de negocios con PBI
 
    /introduccion-al-business-intelligence/repositorio
 
+Trabajo final
+--------------------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 3
+   :glob:
+
+   /notebooks/recursos/practicas-pbi/Trabajo-final
+
 Sesión 01 - Introducción
 --------------------------------------------------------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :glob:
 
    /notebooks/bi/01-introduccion-bi
@@ -26,7 +35,7 @@ Sesión 02 - Fundamentos de BI
 --------------------------------------------------------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :glob:
 
    /notebooks/bi/02-fundamentos-de-bi

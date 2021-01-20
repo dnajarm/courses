@@ -4,7 +4,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "Introducción a la Inteligencia de Negocios (BI)\n",
+    "Introducción a la inteligencia de negocios (BI)\n",
     "==========================\n",
     "\n",
     "90 min | Última modificación: Enero 08, 2020.\n",
@@ -302,7 +302,10 @@
     "* ¿Cómo son los clientes que estoy perdiendo? Cuantos son?\n",
     "\n",
     "### Una solución de Inteligencia de Negocios completa permite:\n",
-    "<div align=\"center\"><img src=\"./images/01-introduccion-bi/14_BIE.png\" alt=\"Drawing\" style=\"width: 800px;\"/></div>"
+    "<div align=\"center\"><img src=\"./images/01-introduccion-bi/14_BIE.png\" alt=\"Drawing\" style=\"width: 800px;\"/></div>\n",
+    "\n",
+    "### Actividad\n",
+    "[Realizar la siguiente prueba](https://docs.google.com/forms/d/e/1FAIpQLSeZdWIm-HhKaAYu1boLyLIsDJUXMNec9F-E_0j94dkAHePqhg/viewform?usp=sf_link)\n"
    ]
   },
   {
