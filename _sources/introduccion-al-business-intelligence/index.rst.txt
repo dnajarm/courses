@@ -13,7 +13,7 @@ Introducción a la inteligencia de negocios con PBI
 
    /introduccion-al-business-intelligence/repositorio
 
-Trabajo final
+Laboratorio final
 --------------------------------------------------------------------
 
 .. toctree::
