@@ -27,7 +27,7 @@
     "**Sobre este curso:** \n",
     "Este es un curso que pretende introducir al estudiante en el mundo de la inteligencia de negocios, partiendo de los conceptos básicos acerca de BI, \n",
     "abordando el uso de la herramienta PBI la cual le dará la capacidad de recolectar, organizar y analizar sus datos \n",
-    "rápidamente. El producto final de BI, serán reportes dinámicos dónde podrá monitorear y análisis objetivamente su negocio y tomar acciones que ayuden \n",
+    "rápidamente. El producto final de BI, serán reportes dinámicos dónde podrá monitorear y análizar objetivamente su negocio y tomar acciones que ayuden \n",
     "a mejorar drásticamente sus resultados.\n",
     "\n",
     "\n",
@@ -97,13 +97,6 @@
     "\n",
     "\n"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

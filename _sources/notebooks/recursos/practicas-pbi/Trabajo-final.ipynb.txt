@@ -4,7 +4,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "Trabajo final\n",
+    "Laboratorio final\n",
     "==========================\n",
     "\n",
     "90 min | Última modificación: Enero 08, 2020."
@@ -61,7 +61,6 @@
    ]
   },
   {
-   "attachments": {},
    "cell_type": "markdown",
    "metadata": {},
    "source": [
